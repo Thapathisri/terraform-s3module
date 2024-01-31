@@ -1,22 +1,19 @@
 variable "region" {
-  description = "AWS region"
+  description = "The AWS region."
   type        = string
+  default     = "us-east-2"
 }
 
 variable "bucket_name" {
-  description = "Name of the S3 bucket"
+  description = "The name of the S3 bucket."
   type        = string
 }
-
 variable "bucket_acl" {
-  description = "Access control list (ACL) for the bucket"
-  type        = string
+  description = "The access control list (ACL) for the bucket."
   default     = "private"
 }
 
 variable "versioning_enabled" {
-  description = "Whether versioning should be enabled for the bucket"
-  type        = bool
-  default     = false
+  description = "Whether versioning should be enabled for the bucket."
+  default     = "Enabled"
 }
-
